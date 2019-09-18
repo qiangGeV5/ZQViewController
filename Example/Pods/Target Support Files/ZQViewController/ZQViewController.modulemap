@@ -1,0 +1,6 @@
+framework module ZQViewController {
+  umbrella header "ZQViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

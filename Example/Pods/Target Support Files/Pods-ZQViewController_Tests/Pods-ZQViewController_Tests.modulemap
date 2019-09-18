@@ -1,0 +1,6 @@
+framework module Pods_ZQViewController_Tests {
+  umbrella header "Pods-ZQViewController_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

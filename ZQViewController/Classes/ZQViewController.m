@@ -20,6 +20,10 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)printLog{
+    NSLog(@"=== 成功了");
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

@@ -10,4 +10,6 @@
 
 @interface ZQViewController : UIViewController
 
+- (void)printLog;
+
 @end

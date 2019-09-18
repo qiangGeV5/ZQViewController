@@ -1,0 +1,16 @@
+PODS:
+  - ZQViewController (0.1.0)
+
+DEPENDENCIES:
+  - ZQViewController (from `../`)
+
+EXTERNAL SOURCES:
+  ZQViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZQViewController: 5e34d5a40cfaf252a4843ef1b5bd11b6e4c53836
+
+PODFILE CHECKSUM: cff0004d6922cd1c871c304ce8e6617fed91a675
+
+COCOAPODS: 1.7.5

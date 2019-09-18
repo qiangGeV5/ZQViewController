@@ -13,7 +13,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* ZQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* ZQAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* ZQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* ZQViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -22,6 +21,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6FD7D71AF8C9FD11E14B3773 /* Pods_ZQViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71E8CD993048DA2A2FAF7B5 /* Pods_ZQViewController_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		845006EF23320F8C004ED19D /* ZQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845006EE23320F8C004ED19D /* ZQViewController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C95B8E9ED8B34D10C34266AD /* Pods_ZQViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3240A8C5AD26F0B9FF7DE210 /* Pods_ZQViewController_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00FB3766CE8ED64AF0840004 /* ZQViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZQViewController.podspec; path = ../ZQViewController.podspec; sourceTree = "<group>"; };
+		00FB3766CE8ED64AF0840004 /* ZQViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZQViewController.podspec; path = ../ZQViewController.podspec; sourceTree = "<group>"; };
 		0C7C51C01C97A7C61CEDC91F /* Pods-ZQViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQViewController_Example.release.xcconfig"; path = "Target Support Files/Pods-ZQViewController_Example/Pods-ZQViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1D0923885E5D34D9065C98A3 /* Pods-ZQViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQViewController_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZQViewController_Example/Pods-ZQViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3240A8C5AD26F0B9FF7DE210 /* Pods_ZQViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,8 +51,6 @@
 		6003F59B195388D20070C39A /* ZQViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZQViewController-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* ZQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* ZQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* ZQViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* ZQViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* ZQViewController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZQViewController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -61,11 +59,13 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		845006ED23320F8C004ED19D /* ZQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZQViewController.h; path = ../../ZQViewController/Classes/ZQViewController.h; sourceTree = "<group>"; };
+		845006EE23320F8C004ED19D /* ZQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZQViewController.m; path = ../../ZQViewController/Classes/ZQViewController.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		940700F557B68F9752D0E79C /* Pods-ZQViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQViewController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZQViewController_Tests/Pods-ZQViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C1F5A8A86F90B092B91A89D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C1F5A8A86F90B092B91A89D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C7AEB7B35568ED2342758A33 /* Pods-ZQViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQViewController_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZQViewController_Tests/Pods-ZQViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F2B50D31AF4CAB099D7D5B09 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F2B50D31AF4CAB099D7D5B09 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F71E8CD993048DA2A2FAF7B5 /* Pods_ZQViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				940700F557B68F9752D0E79C /* Pods-ZQViewController_Tests.debug.xcconfig */,
 				C7AEB7B35568ED2342758A33 /* Pods-ZQViewController_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -147,8 +146,8 @@
 				6003F59C195388D20070C39A /* ZQAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZQAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* ZQViewController.h */,
-				6003F5A6195388D20070C39A /* ZQViewController.m */,
+				845006ED23320F8C004ED19D /* ZQViewController.h */,
+				845006EE23320F8C004ED19D /* ZQViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -365,8 +365,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* ZQAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* ZQViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				845006EF23320F8C004ED19D /* ZQViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
