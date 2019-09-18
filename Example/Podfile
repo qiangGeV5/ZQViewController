@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'ZQViewController_Example' do
+  pod 'ZQViewController', :path => '../'
+
+  target 'ZQViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
